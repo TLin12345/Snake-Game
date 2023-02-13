@@ -1,1 +1,8 @@
-# Snake-Game
+# Snake Game
+In this program, it contains two main classes: SnakeGame (implementing the logic) and MainForm (derived from Form). 
+1. Class SnakeGame has three events: EatAndGrow (triggered when the snake reaches the location of an apple), HitWallAndLose (triggered when the snake touches an obstacle), and HitSnakeAndLose (triggered when the snake collides with its own body). It also has a number of properties including FieldSize, CurrentDirection (LEFT, RIGHT, UP, DOWN), list of locations/points in which apples are located, Obstacles (list of line segments including the borders of playing field that the snake must not touch), SnakeBody (list of line segments building the snake body), and Start (starting location of the snake). 
+2. Create a method called SnakeGame that constructs a game in a field of size GameFieldSize with a snake of length Length initially positioned at the starting point location and AppleCount apples distributed randomly over the playing field. 
+3. Create a method called Move that first changes the CurrentDirection of the snake to NewDirection (turns), and then moves Step units (pixels) in the direction specified by CurrentDirection. 
+4. The user should be able to set it to any positive integer of the number of apples when the game begins. 
+5. When the snake collides with itself or an obstacle, the application will be stopped and show a message declaring the number of eaten apples. Also, When any of those three events are triggered the event will be playing different sounds for each event.
+6. After every 10 eaten apples, the speed of the snake will increase (maximum = 10). Use a progress bar in the MainForm to show the current value of Step. Make the red dots representing the apples blink. By clicking anywhere on the game field must pause/resume the game.
